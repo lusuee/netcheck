@@ -28,23 +28,23 @@
 
 ## Mac 自启动 
 
-### TODO 加载 plist 实现
+**建议将文件放到 HOME 下，放到 document 下会存在权限问题**
 
 通过添加 plist 实现
 
 > The plist file must be owned by root and group wheel as rw only for owner. So root:wheel 600
 
-1. 修改 plist 权限
-```shell
-sudo chown root:wheel /path/to/plist/file.plist
 
-sudo chmod 644 /path/to/plist/file.plist
-```
+1. 修改 plist 中脚本路径，替换 `/Users/a1021500519/Documents/github/soul-netcheck/netcheck.sh`
 
-2. 修改 plist 中脚本路径，替换`/Users/a1021500519/Documents/github/soul-netcheck/netcheck.sh`
-
-3. 加载 plist
+2. 加载 plist
 
 ```shell
-sudo launchctl load /Library/LaunchDaemons/soul.netcheck.plist
+# 加载
+launchctl load ~/Library/LaunchAgents/soul.netcheck.script.plist
+
+# 卸载
+launchctl unload ~/Library/LaunchAgLaunchAgents/soul.netcheck.script.plist
 ```
+
+netcheck.sh 需要一直在后台运行，否则启动的 tqclient 和 EndpointWatchdog 会被杀掉
