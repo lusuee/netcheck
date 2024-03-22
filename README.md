@@ -37,16 +37,16 @@
 > The plist file must be owned by root and group wheel as rw only for owner. So root:wheel 600
 
 
-1. 修改 plist 中脚本路径，替换 `/Users/a1021500519/Documents/github/soul-netcheck/netcheck.sh`
+1. 修改 plist 中脚本路径，替换 `/Users/a1021500519/Documents/github/netcheck/netcheck.sh`
 
 2. 加载 plist
 
 ```shell
 # 加载
-launchctl load ~/Library/LaunchAgents/soul.netcheck.script.plist
+launchctl load ~/Library/LaunchAgents/netcheck.script.plist
 
 # 卸载
-launchctl unload ~/Library/LaunchAgLaunchAgents/soul.netcheck.script.plist
+launchctl unload ~/Library/LaunchAgLaunchAgents/netcheck.script.plist
 ```
 
 netcheck.sh 需要一直在后台运行，否则启动的 tqclient 和 EndpointWatchdog 会被杀掉
