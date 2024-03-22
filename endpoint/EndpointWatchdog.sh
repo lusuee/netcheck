@@ -1,3 +1,3 @@
 #!/bin/bash
 
-$1/soul-netcheck/dist/EndpointWatchdog/EndpointWatchdog
+$1/netcheck/dist/EndpointWatchdog/EndpointWatchdog
