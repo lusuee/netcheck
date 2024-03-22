@@ -4,11 +4,11 @@
 <plist version="1.0">
   <dict>
     <key>Label</key>
-    <string>soul.netcheck.script</string> // 与文件名保持一致
+    <string>netcheck.script</string> // 与文件名保持一致
 
     <key>ProgramArguments</key>
     <array>
-			<string>/Users/a1021500519/soul-netcheck/netcheck.sh</string> // 替换为本机路径
+			<string>/Users/a1021500519/netcheck/netcheck.sh</string> // 替换为本机路径
     </array>
 
     // 日志输出路径
