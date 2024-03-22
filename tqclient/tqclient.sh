@@ -1,3 +1,3 @@
 #!/bin/bash
 
-$1/soul-netcheck/dist/tqclient/tqclient
+$1/netcheck/dist/tqclient/tqclient
